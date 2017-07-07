@@ -1,5 +1,3 @@
-class nginx::install(
-  
-) inherits nginx {
+class nginx::install inherits nginx {
   
 } 
