@@ -11,4 +11,6 @@ class nginx::install inherits nginx {
     name   => $package_name,
   }  
   
+  Package['install_epel'] -> Package['install_nginx']
+  
 } 
