@@ -30,7 +30,7 @@ function nginx::data {
       'nginx::config_confd' => "${base_params[nginx::config_directory]}/conf.d",
       'nginx::vdir_enable'  => undef,
       'nginx::process_user' => 'nginx',
-      'nginx::vhost_dir'    => "${base_params[nginx::config_confd]}",
+      'nginx::vhost_dir'    => "${base_params[nginx::config_directory]}/sites-enabled",
     }
   }
   

@@ -13,7 +13,7 @@ define nginx::vhost(
 
 #  include nginx
   
-  notify { "Creating the virtual host with data: \n docroot - ${docroot} \n vhost_dir - ${vhost_dir} \n priority - ${priority} \n name - ${name} \n mode/owner/group - ${config_mode}/${config_owner}/${config_group}": }
+  notify { "\n\nCreating the virtual host with data: \n docroot - ${docroot} \n vhost_dir - ${vhost_dir} \n priority - ${priority} \n name - ${name} \n mode/owner/group - ${config_mode}/${config_owner}/${config_group} \n\n": }
   
   $vhost_docroot = "${docroot}/${name}"
   
