@@ -4,7 +4,8 @@ worker_processes <%= @processorcount %>;
 
 error_log <%= @log_dir %>/error.log;
 
-pid <%= @pid_file %>;
+#pid <%= @pid_file %>;
+pid <%= @config_pid_file %>;
 
 events {
  worker_connections 1024;
