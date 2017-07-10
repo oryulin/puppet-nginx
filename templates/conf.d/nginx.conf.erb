@@ -13,7 +13,9 @@ events {
 
 http {
  server_tokens off;
- include <%= @config_dir %>/mime.types;
+# include <%= @config_dir %>/mime.types;
+ include <%= @config_directory %>/mime.types;
+
  default_type application/octet-stream;
 
  access_log <%= @log_dir %>/access.log;
