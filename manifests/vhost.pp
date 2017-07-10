@@ -7,6 +7,7 @@ define nginx::vhost(
   
   $docroot = $::nginx::docroot
   $vhost_dir = $::nginx::vhost_dir
+  $config_log_dir = $::nginx::config_log_dir
   $config_mode = $::nginx::config_mode
   $config_owner = $::nginx::config_owner
   $config_group = $::nginx::config_group
