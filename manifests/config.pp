@@ -23,4 +23,14 @@ class nginx::config inherits nginx {
     owner        => $owner,
     group        => $group,
   }
+  
+  file { 'nginx_sites_enabled':
+    ensure       => directory,
+    name         => "${config_directory}/sites-enabled",
+    recurse      => true,
+    mode         => $config_mode,
+    owner        => $owner,
+    group        => $group,
+  }
+
 }
