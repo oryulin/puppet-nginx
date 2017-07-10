@@ -11,10 +11,6 @@ define nginx::vhost(
   $config_mode = $::nginx::config_mode
   $config_owner = $::nginx::config_owner
   $config_group = $::nginx::config_group
-
-#  include nginx
-  
-  notify { "\n\nCreating the virtual host with data: \n docroot - ${docroot} \n vhost_dir - ${vhost_dir} \n priority - ${priority} \n name - ${name} \n mode/owner/group - ${config_mode}/${config_owner}/${config_group} \n\n": }
   
   $vhost_docroot = "${docroot}/${name}"
   
