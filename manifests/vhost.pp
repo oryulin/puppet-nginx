@@ -3,6 +3,11 @@ define nginx::vhost(
   String $priority = '50',
   String $server_aliases = '',
   Boolean $enable = true,
+  $docroot,
+  $vhost_dir,
+  $config_mode,
+  $config_owner,
+  $config_group,
 ) {
   
   include nginx::data
