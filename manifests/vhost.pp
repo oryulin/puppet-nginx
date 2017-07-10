@@ -3,11 +3,11 @@ define nginx::vhost(
   String $priority = '50',
   String $server_aliases = '',
   Boolean $enable = true,
-  $docroot = $name,
-  $vhost_dir = $name,
-  $config_mode = $name,
-  $config_owner = $name,
-  $config_group = $name,
+  $docroot = $title,
+  $vhost_dir = $title,
+  $config_mode = $title,
+  $config_owner = $title,
+  $config_group = $title,
 ) {
   
 #  $docroot = lookup('nginx::docroot')
