@@ -3,18 +3,13 @@ define nginx::vhost(
   String $priority = '50',
   String $server_aliases = '',
   Boolean $enable = true,
-  $docroot = $title,
-  $vhost_dir = $title,
-  $config_mode = $title,
-  $config_owner = $title,
-  $config_group = $title,
 ) {
   
-#  $docroot = lookup('nginx::docroot')
-#  $vhost_dir = lookup('nginx::vhost_dir')
-#  $config_mode = lookup('nginx::config_mode')
-#  $config_owner = lookup('nginx::config_owner')
-#  $config_group = lookup('nginx::config_group')
+  $docroot = $::nginx::docroot
+  $vhost_dir = $::nginx::vhost_dir
+  $config_mode = $::nginx::config_mode
+  $config_owner = $::nginx::config_owner
+  $config_group = $::nginx::config_group
 
 #  include nginx
   
