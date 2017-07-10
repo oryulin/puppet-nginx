@@ -8,7 +8,7 @@ function nginx::data {
     'nginx::config_mode'           => '0664',
     'nginx::config_owner'          => 'root',
     'nginx::config_group'          => 'root',
-    'nginx::config_log_dir'        => '/var/log/ngingx',
+    'nginx::config_log_dir'        => '/var/log/nginx',
     'nginx::config_pid_file'       => '/run/nginx.pid',	
     'nginx::service_ensure'        => 'running',
     'nginx::service_name'          => 'nginx',
